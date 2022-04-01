@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: app/V1
 kind: Deployment
 metadata:
   name: basic-app
@@ -13,7 +13,7 @@ spec:
         app: basic-app
     spec:
       containers:
-      - name: basicapp
+      - name: basic-app
         image: jmevada6/myfirstapp
         ports:
         - containerPort: 80
