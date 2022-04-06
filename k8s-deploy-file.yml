@@ -1,4 +1,4 @@
-apiVersion: apps/v1.1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp-dep
@@ -17,6 +17,7 @@ spec:
       containers:
       - name: web
         image: jmevada6/myfirstapp:latest
+        imagePullPolicy: always
         ports:
         - containerPort: 80
 
