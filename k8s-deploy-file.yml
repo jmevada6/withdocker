@@ -31,4 +31,4 @@ spec:
     port: 80
     nodePort: 30009
   selector:
-    app: webapp-dep
+    app: myapp-dep
