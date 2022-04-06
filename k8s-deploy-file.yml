@@ -19,15 +19,20 @@ spec:
         image: nginx:alpine
         ports:
         - containerPort: 80
+
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp-service
-spec:
-  type: NodePort
-  ports:
-  - targetPort: 80
-    port: 80
-  selector:
+  labels:
     app: myapp-dep
+  name: webapp-dep
+spec:
+  ports:
+  - nodePort: 32632
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: myapp
+  type: NodePort
