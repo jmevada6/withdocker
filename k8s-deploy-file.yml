@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: jmevada6/myfirstapp
+        image: jmevada6/myfirstapp:latest
         ports:
         - containerPort: 80
 
