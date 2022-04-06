@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: nginx:alpine
+        image: jmevada6/myfirstapp
         ports:
         - containerPort: 80
 
