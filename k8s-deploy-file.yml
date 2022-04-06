@@ -17,7 +17,7 @@ spec:
       containers:
       - name: web
         image: jmevada6/myfirstapp:latest
-        imagePullPolicy: always
+        imagePullPolicy: "always"
         ports:
         - containerPort: 80
 
